@@ -1,5 +1,5 @@
 describe('API Response Test', () => {
-  
+
   const token = Cypress.env('authToken');
 
   it('should verify the number of users and their properties', () => {
@@ -16,6 +16,7 @@ describe('API Response Test', () => {
           // Verify that the number of objects in the response is 10
           expect(res.body).to.have.lengthOf(10);
 
+          
           // Verify each object in the response
           res.body.forEach(user => {
               expect(user).to.have.property('id').that.is.a('number');
