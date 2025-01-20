@@ -1,1 +1,1 @@
-### An example of working with a simple API request
+### An example of API testing. The Cypress library is used. The correctness of client-server interaction using the GET method has been tested. We checked the possibility of using a token for interaction and validated the authorization field. Validation of the response body fields was also done.
